@@ -13,8 +13,8 @@ class Products(models.Model):
     title = models.Charfield(max=100)
     description = models.TextFieldField()
     price = models.PositiveIntegerField(default=0)
-    # cover
-    status = models.BooleanField(default=True, verbose_name=_("Status"))
+    # cover = models.ImageField()
+    availability = models.BooleanField(default=True, verbose_name=_("Availability"))
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
