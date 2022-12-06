@@ -1,6 +1,9 @@
-from django.urls import path, include
-from .views import home
+from django.urls import path
+from .views import ProductsListView, ProductDetailView, CommentCreateView
 
 urlpatterns = [
-    path('', home)
+    path('', ProductsListView.as_view(), name='products_list'),
+    path('<int:pk>/', ProductDetailView.as_view(), name='product_detail'),
+    path('comments/<int:pk>/', CommentCreateView.as_view(), name='comment_create'),
+
 ]
