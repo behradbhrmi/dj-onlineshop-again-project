@@ -8,11 +8,6 @@ class ProductsCreateForm:
         fields = ('title', 'description', 'price', 'availability', )
 
 
-# class ProductChangeForm:
-#     class Meta:
-        # model = Products
-        # fields = ProductsCreateForm.Meta.fields
-
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comments
