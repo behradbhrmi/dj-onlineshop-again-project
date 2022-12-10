@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # third-party apps
     'allauth',
     'allauth.account',
+    'django_crispy_forms-1.14.0.dist-info',
 
     # local apps
     'products',
