@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     # third-party apps
     'allauth',
     'allauth.account',
-    'django_crispy_forms-1.14.0.dist-info',
+    'crispy_forms',
 
     # local apps
     'products',
@@ -61,7 +61,7 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 SITE_ID = 1
-# EMAIL_BACKEND =
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -132,8 +132,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-# LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'fa'
+LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'fa'
 
 TIME_ZONE = 'Asia/Tehran'
 
