@@ -10,8 +10,8 @@ class DemonstrableCommentsManager(models.Manager):
 
 
 class Products(models.Model):
-    title = models.Charfield(max=100)
-    description = models.TextFieldField()
+    title = models.CharField(max_length=100)
+    description = models.TextField()
     price = models.PositiveIntegerField(default=0)
     # cover = models.ImageField()
     availability = models.BooleanField(default=True, verbose_name=_("Availability"))
