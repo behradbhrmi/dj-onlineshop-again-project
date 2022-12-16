@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'crispy_forms',
+    'rosetta',
 
     # local apps
     'products',
@@ -55,7 +56,7 @@ INSTALLED_APPS = [
 
 ]
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backend.ModelBackend',
+    'django.contrib.auth.backends.ModelBackend',
     # allauth
     'allauth.account.auth_backends.AuthenticationBackend',
 
@@ -132,9 +133,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-# LANGUAGE_CODE = 'fa'
-
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa-ir'
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian'),
+)
 TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True

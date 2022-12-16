@@ -22,4 +22,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('', include('pages.urls')),
 
+    # rosetta i18n
+    path('rosetta/', include('rosetta.urls')),
+
 ]
