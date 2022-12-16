@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% load crispy_forms_filters %}
+{% load static %}
+{#{% load crispy_forms_tags %}#}
+
+{% block body_content %}
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <input type="submit" value="Sign up" class="btn btn-warning mt-3">
+    </form>
+{% endblock %}
